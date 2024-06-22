@@ -1,4 +1,20 @@
-﻿write-Host "---------------------------------------------" -ForegroundColor Yellow
+﻿<#
+.SYNOPSIS
+  Name: NSP_CleanUpLargeFile.ps1
+  Checks the storage location for LargeFile in the file system and checks this against the NSP. If it does not exist, it is deleted (selection)
+
+.NOTES
+  Version:        1.0.0
+  Author:         Frank Fischer - freaky-media
+    Purpose/Change: inital creation
+
+   Version: 1.0.1
+   Author: Frank Fischer - freaky-media
+   Purpose/Change: Add Synopsis/Notes - Change Language 
+#>
+
+
+write-Host "---------------------------------------------" -ForegroundColor Yellow
 
 #Path to the Webportal on Server
 $filePath = "C:\Program Files\Net at Work Mail Gateway\enQsig Webportal\App_Data\Files"
